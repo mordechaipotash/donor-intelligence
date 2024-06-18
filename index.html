@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donor Intelligence</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 50px;
+            background-color: #f5f5f5;
+        }
+        .content {
+            display: none;
+            font-size: 24px;
+            margin: 20px;
+        }
+        .buttons {
+            display: none;
+            margin-top: 30px;
+        }
+        button {
+            font-size: 20px;
+            padding: 10px 20px;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="dynamic-content">
+        <div class="content">Welcome to Donor Intelligence</div>
+        <div class="content">We utilize state-of-the-art machine learning algorithms to analyze vast amounts of donor data.</div>
+        <div class="content">Our technology identifies lapsed donors with the highest likelihood of re-engagement.</div>
+        <div class="content">We provide precise, data-driven insights to create targeted re-engagement strategies.</div>
+        <div class="content">Our approach helps nonprofits rekindle relationships with their most valuable donors, boosting retention rates and fundraising outcomes.</div>
+        <div class="buttons">
+            <button onclick="location.href='#challenge'">The Challenge</button>
+            <button onclick="location.href='#key-features'">Key Features</button>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const contentElements = document.querySelectorAll('.content');
+            let currentIndex = 0;
+
+            function showNextContent() {
+                if (currentIndex > 0) {
+                    contentElements[currentIndex - 1].style.display = 'none';
+                }
+                if (current
+
